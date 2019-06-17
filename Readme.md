@@ -17,4 +17,4 @@ yc managed-kubernetes cluster get-credentials k8s-dev --external
 
 ## Инструкции
 
-[Установка и запуск dashboard](docs/dashboard)
+[Установка и запуск dashboard](dashboard/)
