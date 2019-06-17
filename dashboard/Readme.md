@@ -5,12 +5,13 @@
 Выполните скрипт deploy-dashboard.sh ( скрипт простой, можете посмотреть на команды что он выполняет зайдя в него)
 
 ```
-./dashboard/deploy-dashboard.sh
+cd dashboard
+./deploy-dashboard.sh
 ```
 
 ## Запуск и работа
 
-Запускать dashboard лучше через kubeproxy ввиду соображение безопаности
+Запускать dashboard лучше через kubeproxy ввиду соображений безопаности
 
 
 

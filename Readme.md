@@ -14,6 +14,13 @@ yc managed-kubernetes cluster list
 yc managed-kubernetes cluster get-credentials k8s-dev --external
 ```
 
+3) Выкачайте этот репозиторий
+
+```
+git clone https://github.com/nar3k/kube-yc-recipes.git
+cd kube-yc-recipes
+```
+
 
 ## Инструкции
 
