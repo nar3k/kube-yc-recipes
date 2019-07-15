@@ -44,3 +44,9 @@ controller:
 helm install --name prod-ingress stable/nginx-ingress --values prod.yaml
 
 ```
+
+4) В результате должен создаться контроллер, который будет установлен за Yandex Load Balancer .  IP адрес по которому доступен ingress будет доступен в поле external ip address сервиса , который создался вместе с контроллером - посмотреть можно тут 
+
+```
+kubectl get svc
+```
