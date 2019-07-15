@@ -33,4 +33,6 @@ EOF
 kubectl apply -f create-sa.yaml
 ```
 4) Установите helm с этим SA
+```
 helm init --upgrade --service-account tiller
+```
