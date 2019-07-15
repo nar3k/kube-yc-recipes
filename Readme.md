@@ -25,3 +25,5 @@ cd kube-yc-recipes
 ## Инструкции
 
 [Установка и запуск dashboard](dashboard/)
+[Установка Helm 2+](helm/)
+[Установка nginx-ingress](nginx-ingress/)
