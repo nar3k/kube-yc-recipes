@@ -5,7 +5,7 @@
 ```
 yc k8s cluster get-credentials k8s-dev --external
 ```
-2) Скачайте и поставьте helm c [официального сайта](helm.sh)
+2) Скачайте и поставьте helm c [официального сайта](https://helm.sh)
 
 3) Создайте сервисный аккаунт
 ```
