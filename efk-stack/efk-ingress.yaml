@@ -1,0 +1,24 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: efk-kibana-ingress
+  namespace: efk
+  annotations:
+    certmanager.k8s.io/cluster-issuer: letsencrypt
+    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/ingress.allow-http: "false"
+    kubernetes.io/tls-acme: true
+spec:
+  rules:
+  - host: efk-kibana.sandbox.nrk.me.uk
+    http:
+      paths:
+      - backend:
+          serviceName: efk-kibana
+          servicePort: 443
+        path: /
+  tls:
+  - hosts:
+    - efk-kibana.sandbox.nrk.me.uk
+    secretName: kibana-tls
