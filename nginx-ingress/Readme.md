@@ -1,14 +1,19 @@
 # Установка nginx-ingress
 
-0) [Установите helm](../helm/)
+0) Установите helm 3 и добавьте в него репозиторий для nginx
+
+```
+helm repo add nginx-stable https://helm.nginx.com/stable
+helm repo update
+```
 
 1) Для работы в dev среде достаточно сделать
 
 ```
-helm install stable/nginx-ingress --name dev-ingress
+helm install nginx-ingress nginx-stable/nginx-ingress
 ```
 
-2) Для работы в production среде лучше ознакомится с [официальным репозиторием helm-чарта](https://github.com/helm/charts/tree/master/stable/nginx-ingress) где описываются переменные для установки. Ниже описана конфигурация ingress контроллера, в которой он развернут в трех копиях, с автоскейлигом до 11 ( файл prod.yaml в репозитории)
+2) Для работы в production среде лучше ознакомится с [официальным репозиторием helm-чарта](https://github.com/kubernetes/ingress-nginx) где описываются переменные для установки. Ниже описана конфигурация ingress контроллера, в которой он развернут в трех копиях, с автоскейлигом до 11 ( файл prod.yaml в репозитории)
 
 Пример файла:
 ```
